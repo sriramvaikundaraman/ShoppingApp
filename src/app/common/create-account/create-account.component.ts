@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-account',
@@ -8,10 +9,12 @@ import { Component } from '@angular/core';
 export class CreateAccountComponent {
   email:string="";
   password:string="";
+  username:string="";
 
-  constructor(){}
+  constructor(private router:Router){}
   
-  performLogin(){
-   console.log(this.email+"  "+this.password);
+  performRegister(){
+   console.log(this.email+"  "+this.password+"  "+this.username);
+    this.router.navigateByUrl("/home");
   }
 }
