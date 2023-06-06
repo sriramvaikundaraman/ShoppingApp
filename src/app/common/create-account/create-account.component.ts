@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-account.component.css']
 })
 export class CreateAccountComponent {
+  email:string="";
+  password:string="";
 
+  constructor(){}
+  
+  performLogin(){
+   console.log(this.email+"  "+this.password);
+  }
 }
