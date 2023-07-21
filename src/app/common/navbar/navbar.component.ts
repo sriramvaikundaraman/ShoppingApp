@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  logoPath:String = "../../../assets/images/scart2.png"
+  bag:String = "../../../assets/images/bag.png"
+  profile:String = "../../../assets/images/profile.png"
+  wishlist:String = "../../../assets/images/wishlist.png"
+
+
 }

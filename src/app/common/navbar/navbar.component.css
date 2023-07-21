@@ -1,0 +1,31 @@
+.logo{
+    max-width: 180px;
+    max-height: 90px;
+    margin-left: 5%;
+}
+
+#navbar{
+    position: relative;
+}
+button, .search{
+position: relative;
+top: 4%;
+width: 100px;
+left:3%;
+border: blue;
+background: transparent;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.search{
+    
+    left: 5%;
+    width: 400px;
+    padding: 5px;
+}
+
+i{
+    position: relative; 
+    width: 70px;
+    left:8%
+}

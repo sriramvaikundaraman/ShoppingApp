@@ -1,2 +1,42 @@
 <app-navbar></app-navbar>
-<p>home works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of items" id ="card">
+      <div >
+      <div class="card"  >
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <div *ngIf="item.id!=3">
+            <img class="d-flex align-items-center" id="product_img" [src]="item.images[1]" />
+            
+          </div>
+          <div *ngIf="item.id==3" id="image_outer">
+          <img class="d-flex align-items-center" id ="product_img"  [src]="iphonePath"/>
+          </div>
+   
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a>{{item.title}}</a></h5>
+          <ul class="list-unstyled list-inline mb-0">
+
+            <p>{{item.brand}}</p>
+            <li class="list-inline-item">
+              <p class="text-muted">{{item.rating}}<i class="pi pi-star" id="star"></i> ({{item.stock}})</p>
+            </li>
+          </ul>
+          <p class="mb-2"><b>${{item.price}}</b></p>
+          <!-- <p class="card-text">
+            The best camera in this segment
+          </p> -->
+          <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Add to cart<i class="pi pi-shopping-bag"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+    
+  </div>
+</div>
